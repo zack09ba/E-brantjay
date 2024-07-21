@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+  background: #081b29;
+  color:#ededed;
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo{
+  position: relative;
+  font-size: 25px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logo::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  animation-delay: .4s;
+}
+
+.home{
+  background-position: center;
+  display: flex;
+  padding: 0 10%;
+  height: 68vh;
+  display: flex;
+  align-items: center;
+}
+
+.navbar a{
+  position: relative;
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+  color: #00abf0;
+}
+
+
+.navbar a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  animation-delay: .1s;
+}
+
+.home-content{
+  max-width: 600px;
+}
+
+.home-content h1{
+  position: relative;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.home-content h1::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  animation-delay: .1s;
+}
+
+
+.home-content h3{
+  position: relative;
+  font-size: 32px;
+  color: #00abf0;
+  font-weight: 700;
+}
+
+
+.home-content h3::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  animation-delay: .1s;
+}
+
+.home-content p {
+  position: relative;
+  font-size: 20px;
+  margin: 20px 0 40px;
+}
+
+
+.home-content p::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.1s;
+}
+
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
